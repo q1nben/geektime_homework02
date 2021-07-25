@@ -12,8 +12,6 @@
 
 
 ## 3. 路径
-文件夹为/user/student/qinben
-
 路径结构
 ```
 │  pom.xml
