@@ -1,0 +1,65 @@
+2021-07-25 03:01:02 Shell.java WARN Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:78)
+	at org.apache.hadoop.conf.Configuration.getBoolean(Configuration.java:1625)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:2799)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:960)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Server.<init>(WritableRpcEngine.java:407)
+	at org.apache.hadoop.ipc.WritableRpcEngine.getServer(WritableRpcEngine.java:328)
+	at org.apache.hadoop.ipc.RPC$Builder.build(RPC.java:802)
+	at me.qinben.Server.main(Server.java:20)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 8 more
+2021-07-25 03:01:03 NativeCodeLoader.java WARN Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-07-25 03:02:54 Shell.java WARN Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:78)
+	at org.apache.hadoop.conf.Configuration.getBoolean(Configuration.java:1625)
+	at org.apache.hadoop.security.SecurityUtil.setConfigurationInternal(SecurityUtil.java:101)
+	at org.apache.hadoop.security.SecurityUtil.<clinit>(SecurityUtil.java:85)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:329)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:317)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:907)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:873)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:740)
+	at org.apache.hadoop.ipc.RPC.getProtocolProxy(RPC.java:462)
+	at org.apache.hadoop.ipc.RPC.getProtocolProxy(RPC.java:649)
+	at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:606)
+	at me.qinben.Client.main(Client.java:12)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 13 more
+2021-07-25 03:02:54 NativeCodeLoader.java WARN Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-07-25 03:08:54 Shell.java WARN Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:78)
+	at org.apache.hadoop.conf.Configuration.getBoolean(Configuration.java:1625)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:2799)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:960)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Server.<init>(WritableRpcEngine.java:407)
+	at org.apache.hadoop.ipc.WritableRpcEngine.getServer(WritableRpcEngine.java:328)
+	at org.apache.hadoop.ipc.RPC$Builder.build(RPC.java:802)
+	at me.qinben.Server.main(Server.java:20)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 8 more
+2021-07-25 03:08:55 NativeCodeLoader.java WARN Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
